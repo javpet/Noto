@@ -1,0 +1,21 @@
+<section class="form">
+  <h2>Edit post</h2>
+  <%= simple_form_for @post do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title, :required => true %>
+    <p class="hint">
+      Keep it short and juicy
+    </p>
+
+    <%= f.label :body %>
+    <%= f.text_area :body, :required => true %>
+    <p class="hint">
+    Ain't nobody has time for that
+    </p>
+
+    <%= f.label :image, "Choose an image"%>
+    <%= f.file_field :image, :required => true %>
+
+    <%= f.button :submit, class:"button-primary" %>
+  <% end %>
+</section>

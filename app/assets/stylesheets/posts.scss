@@ -1,0 +1,123 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// COLORS
+$near-black: #111111;
+$moon-gray: #cccccc;
+
+.form {
+	h2 {
+		font-size: 2.25rem;
+		font-weight: 700;
+		padding-left: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	form {
+		padding-left: 2rem;
+		display: flex;
+		flex-flow: column;
+		width: 50%;
+		margin-bottom: 0.5rem;
+
+		input[type="text"],
+		textarea {
+			width: 50%;
+			border: 1px solid;
+			padding: 0.5rem;
+		}
+
+		input:focus,
+		textarea:focus {
+			outline: thin dotted;
+		}
+
+		textarea {
+			height: 150px;
+			display: block;
+		}
+
+		input[type="file"] {
+			margin-bottom: 2rem;
+		}
+
+		label:first-of-type {
+			margin-top: 0;
+		}
+
+		label {
+			margin-top: 1rem;
+			font-size: 0.875rem;
+			font-weight: 700;
+			display: block;
+			margin-bottom: 0.5rem;
+		}
+
+		.hint {
+			margin-top: 0.25rem;
+			font-size: 0.875rem;
+			color: $moon-gray;
+			font-style: italic;
+		}
+	}
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 300px;
+	grid-gap: 20px;
+	padding-left: 2rem;
+
+	a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+		border: 2px solid transparent;
+
+		&:hover {
+			border-color: #eee;
+		}
+	}
+
+	img {
+		max-height: 300px;
+		max-width: 300px;
+	}
+}
+
+.show-page {
+	display: flex;
+	flex-wrap: wrap;
+
+	img {
+		max-height: 800px;
+		max-width: 800px;
+		padding-left: 2rem;
+	}
+
+	.post-details {
+		padding-left: 2rem;
+		max-width: 500px;
+
+		h2 {
+			font-size: 2.25rem;
+			font-weight: 700;
+			margin-bottom: 2rem;
+		}
+
+		p {
+			margin-bottom: 4rem;
+		}
+	}
+
+	.post-actions {
+		display: flex;
+
+		.button-tertiary {
+			margin-left: 1rem;
+		}
+	}
+}

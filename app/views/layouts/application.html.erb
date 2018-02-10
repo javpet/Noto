@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Noto</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <h1><%= link_to "Posts", root_path %></h1>
+      <p>
+        <%= link_to "New post", new_post_path, class: "new-post-link"%>
+      </p>
+    </header>
+    <main>
+      <%= yield %>
+    </main>
+  </body>
+</html>

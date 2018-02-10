@@ -1,0 +1,99 @@
+@import "_reset.scss";
+
+// COLORS
+$near-black: #111111;
+$moon-gray: #cccccc;
+$light-red: #ff725c;
+
+:root {
+	font-family: "Helvetica", sans-serif;
+	font-size: 16px;
+	line-height: 1.25;
+	color: $near-black;
+}
+
+a {
+	text-decoration: none;
+	color: $near-black;
+}
+
+body {
+	margin-top: 8rem;
+	padding-bottom: 4rem;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	h1 {
+		padding: 2rem;
+		font-weight: 700;
+	}
+
+	.new-post-link {
+		margin: 2rem;
+		color: #fff;
+		font-size: 0.875rem;
+		text-decoration: none;
+		padding: 0.5rem 1rem;
+		background-color: $near-black;
+
+		&:hover {
+			color: #fff;
+			background-color: $moon-gray;
+		}
+	}
+}
+
+.button-primary,
+input[type="submit"] {
+	font-size: 0.875rem;
+	color: #fff;
+	background-color: $near-black;
+	padding: 0.5rem 1rem;
+	width: 12rem;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $moon-gray;
+	}
+}
+
+.button-secondary {
+	font-size: 0.875rem;
+	color: #fff;
+	background-color: $moon-gray;
+	padding: 0.5rem 1rem;
+	width: 12rem;
+	text-align: center;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $near-black;
+	}
+}
+
+.button-tertiary {
+	font-size: 0.875rem;
+	color: #fff;
+	background-color: $light-red;
+	padding: 0.5rem 1rem;
+	width: 12rem;
+	text-align: center;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $near-black;
+	}
+}
