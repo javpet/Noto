@@ -37,6 +37,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 2rem;
+	z-index: 1;
 
 	h1 {
 		padding: 2rem;
@@ -105,6 +106,19 @@ input[type="submit"] {
 	&:hover {
 		background-color: $red;
 		color: #fff;
+	}
+}
+
+// ANIMATIONS
+@keyframes fadeIn {
+	from {
+		opacity: 0%;
+		transform: translateY(-100%);
+	}
+
+	to {
+		opacity: 100%;
+		transform: translateY(0%);
 	}
 }
 

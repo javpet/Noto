@@ -71,6 +71,7 @@ $moon-gray: #cccccc;
 	padding-left: 2rem;
 	padding-right: 2rem;
 	grid-auto-flow: dense;
+	animation: fadeIn 1s;
 
 	a {
 		display: flex;
@@ -93,6 +94,7 @@ $moon-gray: #cccccc;
 .show-page {
 	display: flex;
 	flex-wrap: wrap;
+	animation: fadeIn 1s;
 
 	img {
 		max-height: 800px;
@@ -125,6 +127,18 @@ $moon-gray: #cccccc;
 	}
 }
 
+// ANIMATIONS
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+// MEDIA QUERIES
 @media (max-width: 600px) {
 	.grid {
 		padding-left: 0;
