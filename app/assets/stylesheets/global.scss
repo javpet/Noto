@@ -109,17 +109,6 @@ input[type="submit"] {
 	}
 }
 
-// ANIMATIONS
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
-
 @media (max-width: 600px) {
 	body {
 		margin-top: 5rem;

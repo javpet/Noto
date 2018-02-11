@@ -71,7 +71,6 @@ $moon-gray: #cccccc;
 	padding-left: 2rem;
 	padding-right: 2rem;
 	grid-auto-flow: dense;
-	animation: fadeInGrid 1s;
 
 	a {
 		display: flex;
@@ -124,17 +123,6 @@ $moon-gray: #cccccc;
 		.button-tertiary {
 			margin-left: 1rem;
 		}
-	}
-}
-
-// ANIMATIONS
-@keyframes fadeInGrid {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
 	}
 }
 
