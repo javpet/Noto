@@ -127,6 +127,7 @@ $moon-gray: #cccccc;
 @media (max-width: 600px) {
 	.grid {
 		padding-left: 0;
+		padding-right: 0;
 		grid-template-columns: 1fr;
 	}
 
