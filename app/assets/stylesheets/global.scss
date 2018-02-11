@@ -3,6 +3,7 @@
 // COLORS
 $near-black: #111111;
 $moon-gray: #cccccc;
+$red: #ff4136;
 $light-red: #ff725c;
 
 :root {
@@ -77,8 +78,9 @@ input[type="submit"] {
 
 .button-secondary {
 	font-size: 0.875rem;
-	color: #fff;
-	background-color: $moon-gray;
+	color: $near-black;
+	border: 2px solid $near-black;
+	background-color: #fff;
 	padding: 0.5rem 1rem;
 	width: 12rem;
 	text-align: center;
@@ -86,20 +88,23 @@ input[type="submit"] {
 
 	&:hover {
 		background-color: $near-black;
+		color: #fff;
 	}
 }
 
 .button-tertiary {
 	font-size: 0.875rem;
-	color: #fff;
-	background-color: $light-red;
+	color: $red;
+	background-color: #fff;
+	border: 2px solid $red;
 	padding: 0.5rem 1rem;
 	width: 12rem;
 	text-align: center;
 	cursor: pointer;
 
 	&:hover {
-		background-color: $near-black;
+		background-color: $red;
+		color: #fff;
 	}
 }
 
