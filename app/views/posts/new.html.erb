@@ -13,8 +13,8 @@
     Ain't nobody has time for that
     </p>
 
-    <%= f.label :image, "Choose an image"%>
-    <%= f.file_field :image, :required => true, class:"button-secondary" %>
+    <%= f.label :image, "Choose an image", class: "button-secondary-image"%>
+    <%= f.file_field :image, :required => true %>
 
     <%= f.button :submit, class:"button-primary" %>
   <% end %>
