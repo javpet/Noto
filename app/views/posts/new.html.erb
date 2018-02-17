@@ -1,6 +1,17 @@
 <section class="form">
-  <h2>New post</h2>
   <%= simple_form_for @post do |f| %>
+
+    <% if @post.errors.any? %>
+      <div class="errors">
+        <% @post.errors.full_messages.each do |message| %>
+          <li>
+            <%= message %>
+          </li>
+        <% end %>
+      </div>
+    <% end %>
+
+    <h2>New post</h2>
     <%= f.label :title %>
     <%= f.text_field :title, :required => true %>
     <p class="hint">
@@ -10,10 +21,10 @@
     <%= f.label :body %>
     <%= f.text_area :body, :required => true %>
     <p class="hint">
-    Ain't nobody has time for that
+    Ain't nobody has time for that, keep it in 400 characters
     </p>
 
-    <%= f.label :image, "Choose an image", class: "button-secondary-image"%>
+    <%= f.label :image, "Choose an image" %>
     <%= f.file_field :image, :required => true %>
 
     <%= f.button :submit, class:"button-primary" %>
