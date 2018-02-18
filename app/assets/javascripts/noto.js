@@ -4,16 +4,16 @@ document.addEventListener(
 		// your code goes here
 
 		// CONSTANTS
-		const signUpForm = document.querySelector(".signup-form");
-		const closeIcon = document.querySelector(".close-icon");
+		var signUpForm = document.querySelector(".signup-form");
+		var closeIcon = document.querySelector(".close-icon");
 
 		// Bringing in the sign up form
-		const fadeInSignUp = () => {
+		var fadeInSignUp = () => {
 			signUpForm.classList.add("inside");
 		};
 
 		//Bringing out the sign up form
-		const fadeOutSignUp = () => {
+		var fadeOutSignUp = () => {
 			signUpForm.classList.remove("inside");
 		};
 
