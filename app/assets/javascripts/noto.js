@@ -8,12 +8,12 @@ document.addEventListener(
 		var closeIcon = document.querySelector(".close-icon");
 
 		// Bringing in the sign up form
-		var fadeInSignUp = () => {
+		var fadeInSignUp = function() {
 			signUpForm.classList.add("inside");
 		};
 
 		//Bringing out the sign up form
-		var fadeOutSignUp = () => {
+		var fadeOutSignUp = function() {
 			signUpForm.classList.remove("inside");
 		};
 
