@@ -1,5 +1,6 @@
 class Post < ApplicationRecord
   mount_uploader :image, PostImageUploader
+  profanity_filter :title, :body
 
   validates :title, presence: true, length: { minimum: 3 }
   validates :body, presence: true, length: { in: 10..400 }

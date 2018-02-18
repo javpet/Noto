@@ -19,6 +19,9 @@ group :production do
    gem 'pg',  '0.20.0'
 end
 
+# Adding profanity filter to post title and body
+gem 'profanity_filter'
+
 
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
