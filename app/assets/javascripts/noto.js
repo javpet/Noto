@@ -1,19 +1,17 @@
 document.addEventListener(
 	"DOMContentLoaded",
 	function() {
-		// your code goes here
-
 		// CONSTANTS
-		var signUpForm = document.querySelector(".signup-form");
-		var closeIcon = document.querySelector(".close-icon");
+		const signUpForm = document.querySelector(".signup-form");
+		const closeIcon = document.querySelector(".close-icon");
 
 		// Bringing in the sign up form
-		var fadeInSignUp = function() {
+		var fadeInSignUp = () => {
 			signUpForm.classList.add("inside");
 		};
 
 		//Bringing out the sign up form
-		var fadeOutSignUp = function() {
+		var fadeOutSignUp = () => {
 			signUpForm.classList.remove("inside");
 		};
 

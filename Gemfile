@@ -22,6 +22,9 @@ end
 # Adding profanity filter to post title and body
 gem 'profanity_filter'
 
+# Adding webpacker to use ES6
+gem 'webpacker', '~> 3.2'
+
 
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
